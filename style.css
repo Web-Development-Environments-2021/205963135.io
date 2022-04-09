@@ -256,6 +256,14 @@ h1:after {
 	margin: auto;
 }
 
+.wrap2{
+	width: 560px;
+	height: 315px;
+    padding: 0;
+    overflow: hidden;
+	margin: auto;
+}
+
 span.about{
 	font-family: 'Disney Encanto'; 
 	font-size: 15px; 
