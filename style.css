@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import url('http://fonts.cdnfonts.com/css/disney-encanto');
+@font-face {
+	font-family: "Disney Encanto";
+	src: url('http://fonts.cdnfonts.com/css/disney-encanto')
+}
+
 #menu
 {
 	position: fixed;
@@ -28,8 +32,7 @@
 
 
 h1 {
-  /* font-family: 'Disney Encanto'; */
-  font-family: 'Courier New';
+  font-family: "Disney Encanto";
   margin: auto;
   color: #0300b9;
   text-align: center;
