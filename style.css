@@ -34,28 +34,33 @@ h1 {
   font-size: 30px;
   max-width: 600px;
   position: relative;
+  word-spacing: 5px;
 }
 
 h1:before {
   content: "";
-  width: 500px;
+  width: 50%;
   height: 2px;
   background: #000;
   left: 0;
   top: 50%;
-  position: absolute;
+  position: relative;
   margin-left: -50%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 h1:after {
   content: "";
-  width: 500px;
+  width: 50%;
   height: 2px;
   background: #000;
   right: 0;
   top: 50%;
-  position: absolute;
+  position: relative;
   margin-right: -50%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
