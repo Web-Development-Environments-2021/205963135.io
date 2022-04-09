@@ -2,18 +2,60 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet2" type="text/css" href="/css/emoji.css"/>
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
+  <nav class="fixed-nav-bar">
+    <div id="menu" class="navigation">
+      <img class="logo" src="encanto logo.png">
+      <ul>
+        <li class="list active">
+          <a href="#about">
+            <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+            <span class="text">About Me</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#photos">
+            <span class="icon"><ion-icon name="images-outline"></ion-icon></span>
+            <span class="text">My Photos</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#playlist">
+            <span class="icon"><ion-icon name="musical-notes-outline"></ion-icon></span>
+            <span class="text">My Playlist</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#like">
+            <span class="icon"><ion-icon name="heart-circle-outline"></ion-icon></span>
+            <span class="text">Like</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#qrcoder">
+            <span class="icon"><ion-icon name="qr-code-outline"></ion-icon></span>
+            <span class="text">QR code</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#spa">
+            <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+            <span class="text">Q&A</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#contact">
+            <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+            <span class="text">Contact Me</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+  </nav> 
+
 <section id="about" class="section">
 <br/>
 <br/>
@@ -22,19 +64,21 @@
 <br/>
 <br/>
 <br/>
+<h1>about me</h1>
+<br/>
+<img src="abuela-alma.jpg" alt="abuela Alma picture" class="center">
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+<span class="about">
+  Abuela Alma Madrigal is the head of the Madrigal family. When she was younger (when Julieta,
+  Pepa, and Bruno were babies) she and her husband Pedro were forced to flee their home
+  village from armed conflict. The robbers followed and in an attempt to let everyone
+  escape, Pedro distracted them and sacrificed his life. When Alma was left hopeless in
+  the darkest moment, a miracle blessed them and her candle, vanquishing the invading army
+  and creating La Casa Madrigal. To this day, every child born in the family is blessed 
+  with their own unique magical gifts, except Alma's second youngest grandchild Mirabel.
+</span>
+
 </section>
 
 <section id="photos" class="section">
@@ -44,19 +88,13 @@ about me
 <br/>
 <br/>
 <br/>
+<h1>my photos</h1>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
+<div class="wrap">
+  <iframe id="image" frameborder="0" scrolling="no" width="100%" height="100%" class="roundPic"></iframe>
+</div>
+</iframe>
 <br/>
 </section>
 
@@ -64,21 +102,37 @@ my photos
 <br/>
 <br/>
 <br/>
+<h1>my playlist</h1>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
+<div class="audio_player">
+  <audio src="" controls id="audioPlayer" type="audio/mpeg">Sorry' your browser doesn't support html5</audio>
+  <div class="player">
+    <span class="audio-title" id="audioTitle">Playlist</span>
+    <div class="player-middle-row">
+      <div class="player-middle-left">
+        <span id="audioPlayPause"></span>
+        <span id="audioStop"></span>
+      </div>
+      <div class="player-middle-right">
+        <span id="duration">0:0</span>
+        <span id="durationUpdate">0:0</span>
+      </div>
+    </div>
+  </div>
+  <div class="audioPlayerlistWrap">
+  
+  </div>
+</div>
+
+<!-- <ul id="playlist">
+  <li  class="current-song"><a href="audio/We_Dont_Talk_About_Bruno.mp3">We Dont Talk About Bruno</a></li>
+  <li><a href="audio/Waiting_On_A_Miracle.mp3">Waiting On A Miracle</a></li>
+  <li><a href="audio/All_Of_You.mp3">All Of You</a></li>
+  <li><a href="audio/Carlos_Vives.mp3">Carlos Vives</a></li>
+  <li><a href="audio/Dos_Oruguitas.mp3">Dos Oruguitas</a></li>
+  <li><a href="audio/Surface_Pressure.mp3">Surface Pressure</a></li>
+  <li><a href="audio/What_Else_Can_I_Do.mp3">What Else Can I Do</a></li>
+</ul> -->
 <br/>
 <br/>
 </section>
@@ -89,19 +143,12 @@ my playlist
 <br/>
 <br/>
 <br/>
+<h1>give me a like</h1>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
+<div class="wrap">
+  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDisneyIsrael&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="331" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</div>
 <br/>
 <br/>
 </section>
@@ -123,7 +170,7 @@ give me a like
 <br/>
 <br/>
 <br/>
-scan my code
+<h1>scan my code</h1>
 <br/>
 <br/>
 <br/>
@@ -146,7 +193,7 @@ scan my code
 <br/>
 <br/>
 <br/>
-ans
+<h1>ans</h1>
 <br/>
 <br/>
 <br/>
@@ -169,25 +216,53 @@ ans
 <br/>
 <br/>
 <br/>
-contact me
+<h1>contact me</h1>
 <br/>
 <br/>
 <br/>
 </section>
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
+  <script type="text/javascript">
+  $(function(){
+    $("#nav a").click(function(e){
+      e.preventDefault();
+      $('html,body').scrollTo(this.hash,this.hash); 
+    });
   });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+  </script>
+  <script type="text/javascript">
+  $(document).scroll(function() {
+      $('#menu').toggle($(this).scrollTop()>1000)
+  });​
+  </script>
+  <script>
+    const list = document.querySelectorAll('.list');
+    function activeBotton(){
+      list.forEach((item) => item.classList.remove('active'));
+      this.classList.add('active');
+    }
+    list.forEach((item)=> item.addEventListener('click',activeBotton));
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript">
+    let image = document.getElementById('image');
+    let images = ['image1.png','image2.png','image3.png','image4.jpg','image5.jpg']
+    image.src = images[1];
+    setInterval(function(){
+      let random = Math.floor(Math.random()*5);
+      image.src = images[random];
+    }, 2500)
+  </script>
+  <script type="text/javascript">
+    audioPlayer();
+    function audioPlayer(){
+      $("#audioPlayer")[1].src = $("#playlist li a")[1];
+      $("#audioPlayer")[1].play()
+
+    }
+  </script>
+  <script src="/js/emoji.js"></script>
 </body>
 </html>
