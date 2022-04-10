@@ -3,10 +3,22 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
 
 
-html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
+html, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
 	margin: 0;
 	padding: 0;
 	font-family: "Disney Encanto";
+	color: white;
+	background-color: #222327;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Disney Encanto";
+	background-image: url('casita.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
 }
 
 #menu
@@ -44,7 +56,7 @@ h2 {
 
 h2:before,
 h2:after {
-  background-color: black;
+  background-color: #222327;
   content: "";
   display: inline-block;
   height: 3px;
@@ -261,6 +273,7 @@ span.about{
 	display: -webkit-box;
 	line-height: 2;
 	word-spacing: 5px;
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 form { 
@@ -285,14 +298,15 @@ input[type=text]{
 	height:30px;
 	font-family: 'Disney Encanto';
 	word-spacing: 5px;
-
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 #containerText .emojionearea-editor {
 	min-height: 13em !important;
 	-webkit-border-radius: 16px;
 	-moz-border-radius: 16px;
-	border-radius: 16px;	  }
+	border-radius: 16px;
+}
 
 textarea {
 	width:100%;
@@ -304,7 +318,8 @@ textarea {
 	height:150px;
 	font-family: 'Disney Encanto';
 	word-spacing: 5px;
-	}
+	background-color: rgba(255, 255, 255, 0.8);
+}
 
 .submit-btn{
 	font-family: 'Disney Encanto';
