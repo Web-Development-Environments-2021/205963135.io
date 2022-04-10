@@ -59,6 +59,7 @@ h2 {
 	overflow: hidden;
 	text-align: center;
 	word-spacing: 5px;
+	font-size: 35px;
   }
 
 h2:before,
@@ -127,7 +128,7 @@ h2:after {
 	position: relative;
 	display: inline-block;
 	line-height: 75px;
-	font-size: 1.5em;
+	font-size: 20px;
 	text-align: center;
 	transition: 0.5s;
 	color: white;
@@ -143,15 +144,17 @@ h2:after {
 
 
 .navigation ul li a .text{
-	position: absolute;
+	position: relative;
 	color: white;
 	font-weight: 400;
-	font-size: 0.5em;
+	font-size: 11px;
 	letter-spacing: 0.05em;
 	transition: 0.5s;
 	opacity: 0;
 	transform: translateY(20px);
 	font-family: 'Disney Encanto';
+	text-align: center;
+	margin-top: -50px;
 }
 
 
@@ -273,7 +276,7 @@ h2:after {
 
 span.about{
 	font-family: 'Disney Encanto'; 
-	font-size: 15px; 
+	font-size: 20px; 
 	margin: 0 100px 0 100px;
 	text-align: center;
 	display: -webkit-box;
