@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-/* @import url('http://fonts.cdnfonts.com/css/disney-encanto'); */
-
-@font-face {
-    font-family: 'Disney Encanto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Disney Encanto'), url('http://fonts.cdnfonts.com/s/74964/DisneyEncanto-JRALE.woff');
-}
+@import url('http://fonts.cdnfonts.com/css/disney-encanto');
 
 html, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
 	margin: 0;
 	padding: 0;
+	font-family: 'Beau Rivage', cursive;
 	font-family: "Disney Encanto";
 	color: white;
 	background-color: #222327;
@@ -19,6 +13,7 @@ html, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
 body{
 	margin: 0;
 	padding: 0;
+	font-family: 'Beau Rivage', cursive;
 	font-family: "Disney Encanto";
 	background-image: url('casita.png');
 	background-repeat: no-repeat;
@@ -55,6 +50,7 @@ body{
 }
 
 h2 {
+	font-family: 'Beau Rivage', cursive;
 	font-family: "Disney Encanto";
 	overflow: hidden;
 	text-align: center;
@@ -152,6 +148,7 @@ h2:after {
 	transition: 0.5s;
 	opacity: 0;
 	transform: translateY(20px);
+	font-family: 'Beau Rivage', cursive;
 	font-family: 'Disney Encanto';
 	text-align: center;
 	margin-top: -50px;
@@ -167,71 +164,6 @@ h2:after {
 	opacity: 1;
 	transform: translateY(10px);
 }
-
-/* .indicator{
-	position: absolute;
-	left: 192px;
-	top: -105%;
-	width: 50px;
-	height: 50px;
-	background: #145021;
-	border-radius: 50%;
-	border: 6px solid var(--clr); 
-	transition: 0.5s;
-	
-}
-
-.indicator::before{
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: -22px;
-	width: 20px;
-	height: 20px;
-	background: transparent;
-	border-bottom-left-radius: 20px;
-	box-shadow: 1px -10px 0 0 var(--clr);
-}
-
-.indicator::after{
-	content: '';
-	position: absolute;
-	top: 50%;
-	right: -22px;
-	width: 20px;
-	height: 20px;
-	background: transparent;
-	border-bottom-left-radius: 20px;
-	box-shadow: -1px -10px 0 0 var(--clr);
-} 
-
-.navigation ul li:nth-child(1).active ~  .indicator{
-	transform: translateX(calc(70px*0));
-}
-
-.navigation ul li:nth-child(2).active ~  .indicator{
-	transform: translateX(calc(70px*1));
-}
-
-.navigation ul li:nth-child(3).active ~  .indicator{
-	transform: translateX(calc(70px*2));
-}
-
-.navigation ul li:nth-child(4).active ~  .indicator{
-	transform: translateX(calc(70px*3));
-}
-
-.navigation ul li:nth-child(5).active ~  .indicator{
-	transform: translateX(calc(70px*4));
-}
-
-.navigation ul li:nth-child(6).active ~  .indicator{
-	transform: translateX(calc(70px*5));
-}
-
-.navigation ul li:nth-child(7).active ~  .indicator{
-	transform: translateX(calc(70px*6));
-} */
 
 .center {
 	display: block;
@@ -275,6 +207,7 @@ h2:after {
 }
 
 span.about{
+	font-family: 'Beau Rivage', cursive;
 	font-family: 'Disney Encanto'; 
 	font-size: 20px; 
 	margin: 0 100px 0 100px;
@@ -290,6 +223,7 @@ form {
 	width:500px;
 	padding: 20px;
 	text-align: center;
+	font-family: 'Beau Rivage', cursive;
 	font-family: 'Disney Encanto';
 	}
 
@@ -305,6 +239,7 @@ input[type=text]{
 	border:0;
 	box-shadow:4px 4px 10px rgba(0,0,0,0.06);
 	height:30px;
+	font-family: 'Beau Rivage', cursive;
 	font-family: 'Disney Encanto';
 	word-spacing: 5px;
 	background-color: rgba(255, 255, 255, 0.8);
@@ -325,12 +260,14 @@ textarea {
 	border:0;
 	box-shadow:4px 4px 10px rgba(0,0,0,0.06);
 	height:150px;
+	font-family: 'Beau Rivage', cursive;
 	font-family: 'Disney Encanto';
 	word-spacing: 5px;
 	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .submit-btn{
+	font-family: 'Beau Rivage', cursive;
 	font-family: 'Disney Encanto';
 	word-spacing: 5px;
 	vertical-align: 0px;
@@ -344,6 +281,7 @@ input[type=submit]{
 	border-radius:15px;
 	border:0;
 	box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+	font-family: 'Beau Rivage', cursive;
 	font-family: 'Disney Encanto';
 	word-spacing: 5px;
 }
@@ -364,3 +302,20 @@ ul#bottom> li {
 	height: 25px;
 	width: 25px;
 }
+
+.instagram{
+	/* font-weight: bold; */
+	/* text-decoration: none; */
+	/* border: 1px solid #759cdb; */
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	background-color:#da426d;
+	color: #fff;
+    /* overflow: hidden; */
+	/* margin: auto; */
+	margin-top: 20px;
+	word-spacing: 5px;
+	display:block;
+	text-align: center;
+}
+
