@@ -251,6 +251,9 @@ input[type=text]{
 	-webkit-border-radius: 16px;
 	-moz-border-radius: 16px;
 	border-radius: 16px;
+	text-align: left;
+	padding: 10px;
+	border-radius:10px;
 }
 
 textarea {
@@ -265,6 +268,7 @@ textarea {
 	font-family: 'Disney Encanto';
 	word-spacing: 5px;
 	background-color: rgba(255, 255, 255, 0.8);
+	text-align: left;
 }
 
 .submit-btn{
@@ -305,15 +309,10 @@ ul#bottom> li {
 }
 
 .instagram{
-	/* font-weight: bold; */
-	/* text-decoration: none; */
-	/* border: 1px solid #759cdb; */
 	padding: 10px 10px 10px 10px;
 	border-radius: 5px;
 	background-color:#da426d;
 	color: #fff;
-    /* overflow: hidden; */
-	/* margin: auto; */
 	margin-top: 20px;
 	word-spacing: 5px;
 	display:block;
