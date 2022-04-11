@@ -8,6 +8,7 @@ html, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
 	font-family: "Disney Encanto";
 	color: white;
 	background-color: #222327;
+	word-spacing: 5px;
 }
 
 body{

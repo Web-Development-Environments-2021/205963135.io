@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
-<link href="http://fonts.cdnfonts.com/css/disney-encanto" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css" />
 </head>
 <body>
   <nav class="fixed-nav-bar">
@@ -51,7 +51,6 @@
             <span class="text">Contact Me</span>
           </a>
         </li>
-        <!-- <div class="indicator"></div> -->
       </ul>
     </div>
   </nav> 
@@ -88,7 +87,7 @@
 <br/>
 <br/>
 <br/>
-<h2>my photos</h2>
+<h2>My Photos</h2>
 <br/>
 <br/>
 <div class="wrap">
@@ -105,7 +104,7 @@
   <br/>
   <br/>
   <br/>
-  <h2>my playlist</h2>
+  <h2>My Playlist</h2>
   <br/>
   <div class="wrap2">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/bBeZSuHI4Qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -121,7 +120,7 @@
   <br/>
   <br/>
   <br/>
-  <h2>give me a like</h2>
+  <h2>Give Me a Like</h2>
   <br/>
   <br/>
   <div class="wrap2">
@@ -138,7 +137,7 @@
 <br/>
 <br/>
 <br/>
-<h2>scan my code</h2>
+<h2>Scan My Code</h2>
 <br/>
 <br/>
 <div class="wrap">
@@ -153,7 +152,7 @@
   <br/>
   <br/>
   <br/>
-  <h2>ans</h2>
+  <h2>Ans</h2>
   <br/>
   <br/>
   <br/>
@@ -167,7 +166,7 @@
 <br/>
 <br/>
 <br/>
-<h2>contact me</h2>
+<h2>Contact Me</h2>
 <br/>
 <br/>
 <br/>
@@ -252,6 +251,13 @@
       let random = Math.floor(Math.random()*5);
       image.src = images[random];
     }, 2500)
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+  <script type="text/javascript">
+    $('#form-message-input').emojioneArea({
+      pickerPosition: 'botton'
+    });
   </script>
 </body>
 </html>
